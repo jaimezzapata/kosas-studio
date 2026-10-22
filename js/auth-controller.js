@@ -1,19 +1,14 @@
 function iniciarSesion() {
-    let correo = document.querySelector("#correo");
-    let clave = document.querySelector("#clave");
-    if (correo == "david@correo.com" || clave == "12345") {
-        alert("Bienvenido a KOSAS...")
+    let correo = document.querySelector("#correo").value
+    let clave = document.querySelector("#clave").value
+    if (correo == "correo@correo.com" || clave == "12345") {
+        alert("Bienvenido al sistema...")
         window.location.href = "/pages/catalogo.html"
     } else {
-        alert("Correo o clave incorrectos...")
+        alert("Error de credenciales...")
     }
 }
 
+let btn_login = document.querySelector("#btn-login")
 
-
-let iniciar_secion = document.querySelector("#iniciar_secion");
-let eventos = ["click", "dblclick", "mouseover"]
-
-
-iniciar_secion.addEventListener(eventos[0], iniciarSesion)
-
+btn_login.addEventListener("click", iniciarSesion)
