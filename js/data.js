@@ -1,3 +1,5 @@
+import { setLocalStorage } from "./localStorage.js"
+
 let usuarios = [
     {
         id: "id1",
@@ -24,4 +26,8 @@ export function buscarUsuario(correo, clave) {
 
 function registrarUsuario(){
 
+}
+
+export function registrarCosa() {
+    setLocalStorage(key, value)
 }
