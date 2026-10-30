@@ -1,26 +1,32 @@
 let usuarios = [
-    {
-        id: "id1",
-        nombre: "Jaime Zapata",
-        correo: "correo@correo.com",
-        telefono: "3152001282",
-        contrasena: "12345"
-    },
-    {
-        id: "id2",
-        nombre: "Salome Ramírez",
-        correo: "salome@gmail.com",
-        telefono: "3246778900",
-        contrasena: "12345"
-    }
-]
-
+  {
+    id: "id1",
+    nombre: "Diego Puerta",
+    correo: "correo@correo.com",
+    telefono: "3001234567",
+    contrasena: "12345",
+  },
+  {
+    id: "id2",
+    nombre: "Jaime Zapata",
+    correo: "jaime@correo.com",
+    telefono: "3219876543",
+    contrasena: "12345",
+  },
+  {
+    id: "id3",
+    nombre: "Yeraldin Arenas",
+    correo: "Yeral@correo.com",
+    telefono: "3189874512",
+    contrasena: "12345",
+  },
+];
 
 export function buscarUsuario(correo, clave) {
-    let auth = usuarios.find((usuario) => correo == usuario.correo && clave == usuario.contrasena)
-    return auth
+   let auth = usuarios.find((usuario) => correo == usuario.correo && clave == usuario.contrasena);
+   return auth
 }
 
 export function registrarUsuario() {
-
+    
 }
